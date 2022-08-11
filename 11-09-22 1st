@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+    int n,sum=0,pro=1,rem,temp;
+    printf("Enter a number\n");
+    scanf("%d",&n);
+    temp=n;
+    while(n!=0)
+    {
+        rem=n%10;
+        pro=pro*rem;
+        sum=sum+rem;
+        n=n/10;
+    }
+    printf("The difference between product and sum of the digits of %d is : %d\n",temp,pro-sum);
+}
+
+output:
+
+
+Enter a number
+234
+The difference between product and sum of the digits of 234 is : 15
