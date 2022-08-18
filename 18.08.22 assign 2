@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,sum=0,fact=1,n;
+    printf("enter size of the array");
+    scanf("%d",&n);
+    int a[n-1];
+    printf("enter elements of array");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        fact=1;
+        for(j=1;j<=a[i];j++)
+        {
+            
+            fact=fact*j;
+            
+        }
+        sum=sum+fact;
+        
+    }
+   printf("sum of factorials of given number is %d",sum);
+    return 0;
+}
+output:
+enter size of the array5
+enter elements of array4
+3
+2
+5
+6
+sum of factorials of given number is 872
