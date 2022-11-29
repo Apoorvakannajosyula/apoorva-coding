@@ -1,0 +1,36 @@
+empno=int(input('Enter employee no : '))
+empname=input('Enter employee name : ')
+empdes=input('Enter employee designation : ') 
+basicsalary=50000
+da=basicsalary*10/100
+ta=basicsalary*12/100
+hra=basicsalary*15/100
+netsalary=basicsalary+da+ta+hra
+if netsalary>100000:
+    tax=netsalary*10/100
+    if netsalary>50000 and netsalary<100000:
+        tax=netsalary*7/100
+        if netsalary>40000 and netsalary<50000:
+           tax=netsalary**4/100
+           if netsalary>20000 and netsalary<40000:
+               tax=netsalary*2/100
+               if netsalary<20000:
+                    tax=0
+print('the employee no is :',empno)
+print('the employee name is :',empname)
+print('the employee designation is :',empdes)
+print('the employee basic salary is :',basicsalary)
+print('the employee net salary is :',netsalary)
+print('the employee tax is :',tax)
+
+
+
+        OUTPUT:
+        Enter employee no : 123
+Enter employee name : apoorva
+Enter employee designation : student
+the employee no is : 123
+the employee name is : apoorva
+the employee designation is : student
+the employee basic salary is : 50000
+the employee net salary is : 68500.0
