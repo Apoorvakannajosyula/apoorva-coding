@@ -1,0 +1,31 @@
+a=int(input('Enter 1st value : '))
+b=int(input('Enter 2nd value : '))
+c=int(input('Enter 3rd value : ')) 
+d=int(input('Enter 4th value : '))
+if a>b:
+    if a>c:
+        if a>d:
+            print('1st value is big')
+if b>a:
+    if b>c:
+         if b>d:
+             print('2nd value is big')
+if c>a:
+    if c>b:
+        if c>d:
+            print('3rd value is big')
+if d>a:
+    if d>b:
+        if d>c:
+            print('4th value is big')
+
+            
+ OUTPUT:
+ 
+ 
+ Enter 1st value : 29
+Enter 2nd value : 34
+Enter 3rd value : 21
+Enter 4th value : 5
+2nd value is big
+> 
