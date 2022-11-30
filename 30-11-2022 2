@@ -1,0 +1,60 @@
+maggie=10
+chocolate=45
+biscuits=30
+drink=50
+lays=10
+cno=int(input('ENter customer number :'))
+cname=input('ENter customer name :')
+add=input('ENter customer address :')
+q1=int(input('enter quantity of maggie :'))
+q2=int(input('enter quantity of chocolate :'))
+q3=int(input('enter quantity of biscuits :'))
+q4=int(input('enter quantity of drink :'))
+q5=int(input('enter quantity of lays :'))
+bill=(maggie*q1)+(chocolate*q2)+(biscuits*q3)+(drink*q4)+(lays*q5)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+    bill=bill+tax
+coupon=input('enter coupon code in capital letters :')
+if coupon=='DIWALI' or coupon=='CHRISTMAS' and bill>=3000:
+    discount=bill*20/100
+elif coupon=='DIWALI' or coupon=='CHRISTMAS' and bill>=2000:
+    discount=bill*10/100
+elif coupon=='DIWALI' or coupon=='CHRISTMAS' and bill>=1000:
+    discount=bill*5/100
+else:
+    discount=0
+bill=bill-discount
+print('customer no is :',cno)
+print('customer name is :',cname)
+print('customer address is :',add)
+print('tax is :',tax)
+print('discount is :',discount)
+print('final bill is :',bill)
+
+
+OUTPUT:
+
+ENter customer number :23
+ENter customer name :apoorva
+ENter customer address :vizag
+enter quantity of maggie :3
+enter quantity of chocolate :5
+enter quantity of biscuits :8
+enter quantity of drink :20
+enter quantity of lays :30
+enter coupon code in capital letters :DIWALI
+customer no is : 23
+customer name is : apoorva
+customer address is : vizag
+tax is : 179.5
+discount is : 359.0
+final bill is : 1436.0
