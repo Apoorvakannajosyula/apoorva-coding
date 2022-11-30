@@ -1,0 +1,31 @@
+maggie=10
+chocolate=45
+biscuits=30
+drink=50
+lays=10
+q1=int(input('enter quantity of maggie :'))
+q2=int(input('enter quantity of chocolate :'))
+q3=int(input('enter quantity of biscuits :'))
+q4=int(input('enter quantity of drink :'))
+q5=int(input('enter quantity of lays :'))
+bill=(maggie*q1)+(chocolate*q2)+(biscuits*q3)+(drink*q4)+(lays*q5)
+if bill>3000:
+    tax=bill*5/100
+ elif bill>2000:
+    tax=bill*7/100
+ elif bill>1000:
+    tax=bill*10/100
+ elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+print('total bill is :',bill+tax)
+
+OUTPUT:
+
+enter quantity of maggie :2
+enter quantity of chocolate :5
+enter quantity of biscuits :2
+enter quantity of drink :10
+enter quantity of lays :20
+total bill is : 1005
